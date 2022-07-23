@@ -56,10 +56,6 @@ header a {
     text-shadow: none;
 }
 
-.left-column {
-
-}
-
 .subtitle {
     padding: 150px;
     background-image: url("../images/subtitle.jpeg");
@@ -78,6 +74,10 @@ header a {
     position: relative;
     top: 80px;
     left: 50px;
+}
+
+.left-column {
+
 }
 
 .right-column {
