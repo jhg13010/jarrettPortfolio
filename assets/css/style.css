@@ -69,11 +69,16 @@ header a {
 }
 
 .subtitle h2 {
-        color: var(--primary-color);
+    color: var(--primary-color);
     font-size: 30px;
     position: relative;
     top: 80px;
     left: 50px;
+}
+
+#my-photo {
+    align-items: left; 
+    border-radius: 50px;
 }
 
 .about-work {
