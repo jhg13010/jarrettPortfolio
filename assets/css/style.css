@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #4b96fd;
-    --secondary-color: #4bc896;
-    --tertiary-color: #c8c8c8;
+    --primary-color: #6d9bb5;
+    --secondary-color: #7b7b27;
+    --tertiary-color: #415c51; 
 }
 
 body {
@@ -59,6 +59,7 @@ header a {
 
 /*SUBTITLE SECTION */
 .subtitle {
+    width: 100%;
     padding: 100px;
     background-image: url("../images/subtitle.jpeg");
     background-size: cover;
@@ -70,7 +71,7 @@ header a {
 }
 
 .subtitle h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 30px;
     position: relative;
     top: 80px;
@@ -97,31 +98,104 @@ header a {
     flex-wrap: nowrap;
 }
 
-/* ABOUT ME SECTION*/
-.about-me {
-    background-image: url("../images/about-me.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    color: whitesmoke;
-    height: 200px;
-    position: relative;
-    top: 25%;
-}
-
+/* GENERAL SECTION STYLING*/
 .section-heading {
     text-align: right;
-    padding: 0 0 0 300px;
     position: relative;
-    top: 25%;
+    width: 25%;
 }
 
-.content {
+.section-heading h2 {
+    padding: 30px 50px 0 150px;
+    color: var(--primary-color);
+    height: 100%;
+    background-color: var(--tertiary-color)
+}
+
+/* ABOUT ME SECTION*/
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.about-me-content {
+    background-image: url("../images/about-me.jpeg");
+    background-size: cover;
+    background-position: 80%;
+    color: var(--secondary-color);
     text-align: left;
     padding: 0 0 0 100px;
     position: relative;
-    top: 25%;
+    width: 75%;
 }
 
+.about-me-content p {
+    padding: 0 0 0 250px;
+}
 
+/* WORK SECTION */
+.about-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
 
+.about-work .section-heading {
+    height: 750px;
+}
+
+.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    height: 750px;
+}
+
+.work-box {
+    border: 5px solid var(--secondary-color);
+    height: 25%;
+    width: 50%;   
+}
+
+/*format backgrounds*/
+#box-1 {
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+    background-position: 10% 10%;
+    width: 100%;
+    height: 50%;
+}
+
+#box-2 {
+    background-image: url("../images/my-picture.jpeg");
+    background-size: cover;
+    background-position: 10%;
+}
+
+#box-3 {
+
+}
+
+#box-4 {
+
+}
+
+#box-5 {
+
+}
+
+.work-title {
+    background-color: var(--tertiary-color);
+    border-radius: 2%;
+    padding: 5px;
+    width: 40%;
+    color: var(--primary-color);
+    position: relative;
+    top: 60%;
+}
